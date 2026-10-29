@@ -1,0 +1,25 @@
+/* Adaptación a tablets y móviles */
+@media (max-width: 1020px) {
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .hero-inner { grid-template-columns: 1fr; }
+  .hero h1 { max-width: 20ch; }
+}
+@media (max-width: 920px) {
+  .nav-toggle { display: inline-flex; }
+  .main-nav { display: none; position: absolute; left: 0; right: 0; top: 100%; max-height: calc(100vh - var(--alto-header)); overflow-y: auto; background: var(--color-superficie); border-bottom: 1px solid var(--color-borde); box-shadow: var(--sombra-menu); padding: .5rem 1.25rem 1.2rem; }
+  .main-nav.is-open { display: block; }
+  .nav-list { flex-direction: column; align-items: stretch; }
+  .nav-link, .nav-btn { width: 100%; justify-content: space-between; padding: .95rem .6rem; border-bottom: 1px solid var(--color-borde); border-radius: 0; }
+  .nav-link[aria-current="page"], .nav-btn.is-active { box-shadow: inset 4px 0 0 var(--color-acento); }
+  .submenu { position: static; min-width: 0; box-shadow: none; border: 0; border-left: 2px solid var(--color-borde); margin: .3rem 0 .6rem .6rem; padding: .2rem; }
+}
+@media (max-width: 760px) {
+  .split, .form-fila { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .brand-text { font-size: 1rem; }
+  .hero-acciones .btn, .cta .btn { width: 100%; justify-content: center; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+  .empresa-card:hover { transform: none; }
+}

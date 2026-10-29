@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contactos</title>
+  <meta name="description" content="Datos de contacto y formulario de consulta del holding.">
+  <meta name="theme-color" content="#0a0a0b">
+  <link rel="canonical" href="https://midominio.com.py/ift/contacto/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_PY">
+  <meta property="og:site_name" content="[NOMBRE DEL HOLDING]">
+  <meta property="og:title" content="Contacto | [NOMBRE DEL HOLDING]">
+  <meta property="og:description" content="Datos de contacto y formulario de consulta del holding.">
+  <meta property="og:url" content="https://midominio.com.py/ift/contacto/">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body data-root="../" data-page="contacto">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <div id="site-header"></div>
+  <noscript><div class="noscript-aviso">Este sitio necesita JavaScript. Enlaces: <a href="../">Inicio</a> · <a href="../nosotros/">Nosotros</a> · <a href="../negocios/">Áreas de negocios</a> · <a href="../contacto/">Contacto</a></div></noscript>
+  <main id="contenido" tabindex="-1" data-vista="contacto">
+    <section class="page-hero"><div class="container">
+      <ol class="breadcrumb" aria-label="Ruta de navegación"><li><a href="../">Inicio</a></li><li><span aria-current="page">Contacto</span></li></ol>
+      <h1>Contacto</h1><p>Escribinos o usá cualquiera de nuestros canales.</p>
+    </div></section>
+    <section class="section"><div class="container split split--top">
+      <div><h2>Datos de contacto</h2><div id="contacto-info"></div>
+        <h2 style="margin-top:2rem;font-size:1.4rem">Ubicación</h2><div class="mapa-caja" id="mapa"></div></div>
+      <div class="panel">
+        <h2>Formulario de consulta</h2>
+        <form id="form-contacto" class="form" novalidate>
+          <div class="form-fila">
+            <div class="campo"><label for="nombre">Nombre</label><input id="nombre" name="nombre" type="text" autocomplete="name" required aria-describedby="err-nombre"><p class="error-campo" id="err-nombre"></p></div>
+            <div class="campo"><label for="email">Correo electrónico</label><input id="email" name="email" type="email" autocomplete="email" required aria-describedby="err-email"><p class="error-campo" id="err-email"></p></div>
+          </div>
+          <div class="form-fila">
+            <div class="campo"><label for="telefono">Teléfono <span class="opcional">(opcional)</span></label><input id="telefono" name="telefono" type="tel" autocomplete="tel" aria-describedby="err-telefono"><p class="error-campo" id="err-telefono"></p></div>
+            <div class="campo"><label for="empresa">Empresa <span class="opcional">(opcional)</span></label><input id="empresa" name="empresa" type="text" autocomplete="organization"></div>
+          </div>
+          <div class="campo"><label for="motivo">Motivo de la consulta</label><select id="motivo" name="motivo" required aria-describedby="err-motivo"><option value="">Elegí una opción</option></select><p class="error-campo" id="err-motivo"></p></div>
+          <div class="campo"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" required maxlength="2000" aria-describedby="err-mensaje"></textarea><p class="error-campo" id="err-mensaje"></p></div>
+          <div class="campo"><div class="campo-check"><input id="privacidad" name="privacidad" type="checkbox" required aria-describedby="err-privacidad"><label for="privacidad">Acepto que mis datos se usen para responder esta consulta. <span id="enlace-politica"></span></label></div><p class="error-campo" id="err-privacidad"></p></div>
+          <div class="hp" aria-hidden="true"><label for="_gotcha">No completar</label><input id="_gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off"></div>
+          <p id="estado-form" class="estado-form" role="status" aria-live="polite" hidden></p>
+          <div><button class="btn btn--oscuro" type="submit">Enviar consulta</button></div>
+        </form>
+      </div>
+    </div></section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="../js/data/config.js" defer></script>
+  <script src="../js/data/empresas.js" defer></script>
+  <script src="../js/data/contenido.js" defer></script>
+  <script src="../js/icons.js" defer></script>
+  <script src="../js/utils.js" defer></script>
+  <script src="../js/navigation.js" defer></script>
+  <script src="../js/render-empresas.js" defer></script>
+  <script src="../js/contact.js" defer></script>
+  <script src="../js/main.js" defer></script>
+</body>
+</html>

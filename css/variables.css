@@ -1,0 +1,42 @@
+/* ==========================================================
+   VARIABLES GLOBALES — editá acá colores, tipografía y tamaños
+   ========================================================== */
+:root {
+  /* Negro carbón y dorado champagne */
+  --color-primario: #1b1915;
+  --color-primario-oscuro: #080808;
+  --color-primario-claro: #29251e;
+  --color-acento: #c7a86c;
+  --color-acento-texto: #ddc28f;
+  --color-fondo: #0a0a0b;
+  --color-fondo-alt: #111113;
+  --color-superficie: #171719;
+  --color-borde: #2b2a28;
+  --color-texto: #f0eee9;
+  --color-texto-suave: #aaa7a0;
+  --color-texto-inverso: #ffffff;
+  --color-error: #ff8e88;
+  --color-ok: #7bd49b;
+  --color-foco: #e2c98f;
+  --color-filial: var(--color-acento); /* cada filial puede sobrescribirlo */
+
+  /* Tipografía sans del sistema, sin dependencias externas */
+  --fuente-titulos: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --fuente-base: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --tam-base: 1.0625rem;
+  --tam-h1: clamp(2.3rem, 5.2vw, 3.9rem);
+  --tam-h2: clamp(1.7rem, 3.2vw, 2.4rem);
+  --tam-h3: 1.25rem;
+
+  /* Layout */
+  --ancho-contenedor: 1180px;
+  --ancho-texto: 68ch;
+  --espacio-seccion: clamp(3.5rem, 7vw, 6rem);
+  --alto-header: 78px;
+  --radio: 10px;
+  --sombra-menu: 0 24px 60px rgba(0, 0, 0, .55);
+  --transicion: .22s ease;
+
+  /* Imagen del hero (ruta relativa a este archivo CSS) */
+  --imagen-hero: url("../assets/img/hero.svg");
+}

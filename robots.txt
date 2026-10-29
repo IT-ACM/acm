@@ -1,0 +1,6 @@
+# Copiá/combiná este contenido en https://midominio.com.py/robots.txt (los buscadores solo leen el robots.txt de la raíz del dominio)
+User-agent: *
+Allow: /ift/
+Disallow: /ift/negocios/plantilla-filial.html
+
+Sitemap: https://midominio.com.py/ift/sitemap.xml
